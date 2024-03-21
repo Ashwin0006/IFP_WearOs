@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="greyish"> #b3b3b3</color>
+    <color name="hint_color">#888888</color>
+    <color name="fffffff">#050505</color>
+    <color name="_0000000">#000000</color>
+</resources>

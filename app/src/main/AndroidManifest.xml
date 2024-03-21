@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault">
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="true" />
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".presentation.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.diethome"/>
+        <activity android:name=".presentation.diabetes"/>
+        <activity android:name=".presentation.Bphome"/>
+        <activity android:name=".presentation.lowbp"/>
+        <activity android:name=".presentation.highbp"/>
+        <activity android:name=".presentation.cholesterolhome"/>
+        <activity android:name=".presentation.lowcholesterol"/>
+        <activity android:name=".presentation.highcholesterol"/>
+        <activity android:name=".presentation.ChatApp"/>
+        <activity android:name=".presentation.ChatApplication"/>
+        <activity android:name=".presentation.sendMsg"/>
+        <activity android:name=".presentation.update_diabetes"/>
+        <activity android:name=".presentation.up_lowbp"/>
+        <activity android:name=".presentation.up_highbp"/>
+        <activity android:name=".presentation.up_lowc"/>
+        <activity android:name=".presentation.up_highc"/>
+    </application>
+
+</manifest>
